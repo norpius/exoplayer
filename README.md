@@ -1,1 +1,1 @@
-"# exoplayer" 
+Minimal exoplayer for HLS uri
