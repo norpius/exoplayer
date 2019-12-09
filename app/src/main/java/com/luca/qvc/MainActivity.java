@@ -40,4 +40,16 @@ public class MainActivity extends AppCompatActivity {
                 .setAllowChunklessPreparation(true)
                 .createMediaSource(Uri.parse(VIDEO_URI)));
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        player.setPlayWhenReady(false);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        player.setPlayWhenReady(true);
+    }
 }
